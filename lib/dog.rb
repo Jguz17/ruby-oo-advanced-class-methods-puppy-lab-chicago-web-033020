@@ -9,6 +9,9 @@ class Dog
     @name = name
 
     @@all.push(self)
+    def save
+      @@all.push(self)
+    end
   end
 
   def self.all
@@ -25,8 +28,6 @@ class Dog
     end
   end
 
-  def save
-    @@all.push(self)
-  end
+  
 
 end
